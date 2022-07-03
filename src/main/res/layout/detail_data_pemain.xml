@@ -8,41 +8,40 @@
     <ImageView
         android:id="@+id/image_pemain"
         android:layout_width="match_parent"
-        android:layout_height="422dp"
+        android:layout_height="308dp"
         android:layout_gravity="center"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:src="@drawable/benzema" />
 
     <TextView
-        android:id="@+id/textDataPribadi"
+        android:id="@+id/textDataPibadi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="1dp"
         android:drawablePadding="5dp"
         android:padding="5dp"
         android:text="Data Pribadi"
         android:textAlignment="center"
-        android:textSize="20sp"
-        android:layout_gravity="center_horizontal"
-        />
+        android:textSize="20sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp" >
+        android:layout_marginEnd="5dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nama :"
+            android:text="Nama : "
             />
         <TextView
             android:id="@+id/txtNamaPemain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#0C0C0C"
+            android:textColor="#222722"
             android:text="Benzema"
             />
     </LinearLayout>
@@ -52,18 +51,18 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp" >
+        android:layout_marginEnd="5dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tempat Lahir :"
+            android:text="Tempat Lahir : "
             />
         <TextView
             android:id="@+id/txtTempatLahir"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#0C0C0C"
-            android:text="Lyon (Perancis)"
+            android:textColor="#222722"
+            android:text="Benzema"
             />
     </LinearLayout>
 
@@ -72,58 +71,59 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp" >
+        android:layout_marginEnd="5dp"
+        >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tanggal Lahir :"
+            android:text="Tanggal Lahir : "
             />
         <TextView
             android:id="@+id/txtTanggalLahir"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#0C0C0C"
-            android:text="19 Desember 1987"
+            android:textColor="#222722"
+            android:text="Benzema"
             />
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp" >
+        android:layout_marginEnd="5dp"
+        >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Posisi :"
+            android:text="Posisi : "
             />
         <TextView
             android:id="@+id/txtPosisi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#0C0C0C"
-            android:text="Penyerang"
+            android:textColor="#222722"
+            android:text="Benzema"
             />
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp" >
+        android:layout_marginEnd="5dp"
+        >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tinggi :"
+            android:text="Tinggi : "
             />
         <TextView
             android:id="@+id/txtTinggi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#0C0C0C"
-            android:text="1.85 m"
+            android:textColor="#222722"
+            android:text="Benzema"
             />
     </LinearLayout>
 
@@ -133,7 +133,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp" />
-
+        android:layout_marginRight="5dp"/>
 
 </LinearLayout>
