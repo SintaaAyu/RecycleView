@@ -1,8 +1,11 @@
 package com.sintaayulestari.recyclerview
 
 import android.app.Dialog
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.Window
 import android.widget.Button
 import android.widget.ImageView
@@ -25,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         listPemain.add(Pemain("Sergio Ramos Garcia",R.drawable.ramos,"Belakang","1,84 m", "Camas (Sevilla)","30 Maret 1986"))
         listPemain.add(Pemain("Zinedine Yazid Zidane",R.drawable.zidan,"Pelatih","1,85 m", "Marseille (Perancis)","23 Juni 1972"))
 
-        binding.list.adapter = AdapterTeamBola(this,listPemain,object : AdapterTeamBola.OnClickListener {
+        binding.list.adapter = AdapterTeamBola(this, listPemain,object : AdapterTeamBola.OnClickListener {
             override fun detailData(item: Pemain?) {
                 Dialog(this@MainActivity).apply {
                     requestWindowFeature(Window.FEATURE_NO_TITLE)
@@ -54,7 +57,31 @@ class MainActivity : AppCompatActivity() {
 
                 }.show()
             }
+
+
         })
+
+
+
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main,menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        setMode(item.itemId)
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun setMode(selectedMode : Int){
+        when (selectedMode) {
+            R.id.myprofile -> {
+                val intent = Intent(this,Profile::class.java)
+                startActivity(intent)
+            }
+        }
+
+    }
 }
